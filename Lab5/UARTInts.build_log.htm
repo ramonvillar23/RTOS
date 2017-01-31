@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\445M\Lab5\UARTInts.uvproj
+Project File Date:  04/03/2016
+
+<h2>Output:</h2>
+Rebuild target 'UARTInts'
+compiling PLL.c...
+compiling OS.c...
+OS.c(88): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if(threadPool[i].id >=0 && threadPool[i].id<10)
+OS.c(680): warning:  #186-D: pointless comparison of unsigned integer with zero
+        if((DeadPoolTemp)->id >=0 && (DeadPoolTemp)->id<10)
+OS.c(857): warning:  #186-D: pointless comparison of unsigned integer with zero
+        if((RunPt)->id >=0 && (RunPt)->id<10)
+OS.c: 3 warnings, 0 errors
+compiling Lab2.c...
+Lab2.c(202): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "env" (declared at line 213)
+                switch(commandChosen)
+                ^
+Lab2.c: 1 warning, 0 errors
+assembling startup.s...
+assembling OSasm.s...
+compiling ST7735.c...
+ST7735.c(1221): warning:  #223-D: function "OS_DisableInterrupts" declared implicitly
+                        OS_DisableInterrupts();
+ST7735.c(1233): warning:  #223-D: function "OS_DisableInterrupts" declared implicitly
+                        OS_DisableInterrupts();
+ST7735.c: 2 warnings, 0 errors
+compiling Switch.c...
+compiling UART.c...
+assembling cr4_fft_64_stm32.s...
+compiling diskio.c...
+compiling ff.c...
+compiling heap.c...
+compiling loader.c...
+loader.c(620): warning:  #223-D: function "OS_AddProcess" declared implicitly
+      return LOADER_JUMP_TO(entry, text, data);
+loader.c(667): warning:  #111-D: statement is unreachable
+    return -1;
+loader.c(147): warning:  #177-D: function "swabo" was declared but never referenced
+  static uint32_t swabo(uint32_t hl) {
+loader.c(249): warning:  #177-D: function "readSegment" was declared but never referenced
+  static int readSegment(ELFExec_t *e, int n, Elf32_Phdr *h, size_t nlen) {
+loader.c(273): warning:  #177-D: function "typeStr" was declared but never referenced
+  static const char *typeStr(int symt) {
+loader.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=21968 RO-data=2152 RW-data=348 ZI-data=31620  
+".\UARTInts.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\445M\\Lab5\\UARTInts.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+</pre>
+</body>
+</html>
+ting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+declared but never referenced
+  static int readSegment(ELFExec_t *e, int n, Elf32_Phdr *h, size_t nlen) {
+loader.c(273): warning:  #177-D: function "typeStr" was declared but never referenced
+  static const char *typeStr(int symt) {
+loader.c: 5 warnings, 0 errors
+".\UARTInts.axf" - 3 Error(s), 12 Warning(s).
+Target not created

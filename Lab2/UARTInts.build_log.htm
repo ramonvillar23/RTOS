@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\EE445M\Lab2\UARTInts.uvproj
+Project File Date:  02/25/2016
+
+<h2>Output:</h2>
+Rebuild target 'UARTInts'
+compiling PLL.c...
+compiling OS.c...
+OS.c(714): warning:  #177-D: variable "dataInMailBox" was declared but never referenced
+        uint32_t dataInMailBox = 0;
+OS.c(715): warning:  #177-D: variable "flagMailBox" was declared but never referenced
+        uint8_t flagMailBox = 0;
+OS.c: 2 warnings, 0 errors
+compiling Lab2.c...
+Lab2.c(330): warning:  #68-D: integer conversion resulted in a change of sign
+        uint8_t commandChosen = -1;
+Lab2.c: 1 warning, 0 errors
+assembling startup.s...
+assembling OSasm.s...
+compiling ADC.c...
+compiling ST7735.c...
+ST7735.c(1163): warning:  #223-D: function "OS_DisableInterrupts" declared implicitly
+                        OS_DisableInterrupts();
+ST7735.c(1175): warning:  #223-D: function "OS_DisableInterrupts" declared implicitly
+                        OS_DisableInterrupts();
+ST7735.c: 2 warnings, 0 errors
+compiling Switch.c...
+compiling UART.c...
+UART.c(142): warning:  #550-D: variable "errorCode" was set but never used
+        char errorCode;
+UART.c: 1 warning, 0 errors
+assembling cr4_fft_64_stm32.s...
+assembling PID_stm32.s...
+linking...
+Program Size: Code=10908 RO-data=2052 RW-data=272 ZI-data=7344  
+".\UARTInts.axf" - 0 Error(s), 6 Warning(s).
+</pre>
+</body>
+</html>
+RTInts.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+onnecting: Mode=JTAG, Speed=1000000Hz
+Connection failed!, error code=&d
+Error: Flash Download failed  -  Target DLL has been cancelled
+Load "C:\\EE445M\\Lab2\\UARTInts.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.

@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\445M\Lab4\UARTInts.uvproj
+Project File Date:  04/03/2016
+
+<h2>Output:</h2>
+Rebuild target 'UARTInts'
+compiling PLL.c...
+compiling OS.c...
+assembling startup.s...
+compiling Switch.c...
+compiling UART.c...
+assembling OSasm.s...
+compiling Lab4.c...
+Lab4.c(46): warning:  #550-D: variable "voltage" was set but never used
+  unsigned long voltage;   // in mV,      0 to 3000
+Lab4.c(158): warning:  #167-D: argument of type "void (*)(char)" is incompatible with parameter of type "void (*)(unsigned char)"
+                                eFile_Directory(&UART_OutChar);
+Lab4.c(136): warning:  #177-D: variable "adcVoltage" was declared but never referenced
+        uint32_t adcVoltage;
+Lab4.c(197): warning:  #167-D: argument of type "void (*)(unsigned short)" is incompatible with parameter of type "void (*)(unsigned long)"
+    ADC_Collect(0, 1000, &Producer); // start ADC sampling, channel 0, 1000 Hz
+Lab4.c(280): warning:  #167-D: argument of type "void (*)(char)" is incompatible with parameter of type "void (*)(unsigned char)"
+    eFile_Directory(&UART_OutChar);
+Lab4.c(311): warning:  #167-D: argument of type "void (*)(char)" is incompatible with parameter of type "void (*)(unsigned char)"
+    eFile_Directory(&UART_OutChar);
+Lab4.c(340): warning:  #167-D: argument of type "void (*)(char)" is incompatible with parameter of type "void (*)(unsigned char)"
+    eFile_Directory(&UART_OutChar);
+Lab4.c: 7 warnings, 0 errors
+compiling edisk.c...
+compiling ADC.c...
+compiling efile.c...
+efile.c(42): warning:  #68-D: integer conversion resulted in a change of sign
+        threadIdOpened = -1;
+efile.c(78): warning:  #223-D: function "StartCritical" declared implicitly
+                status = StartCritical();
+efile.c(102): warning:  #223-D: function "EndCritical" declared implicitly
+                EndCritical(status);
+efile.c(108): warning:  #223-D: function "StartCritical" declared implicitly
+                status = StartCritical();
+efile.c(131): warning:  #223-D: function "EndCritical" declared implicitly
+                EndCritical(status);
+efile.c(206): warning:  #68-D: integer conversion resulted in a change of sign
+                while(nextBlockNumber != -1)
+efile.c(251): warning:  #68-D: integer conversion resulted in a change of sign
+                        appendBlock(temp, -1); //point it to null
+efile.c(277): warning:  #68-D: integer conversion resulted in a change of sign
+                appendBlock(NUMBEROFBLOCKS -1, -1);
+efile.c(265): warning:  #177-D: variable "lastFreeBlockNumber" was declared but never referenced
+                uint32_t lastFreeBlockNumber;
+efile.c(289): warning:  #68-D: integer conversion resulted in a change of sign
+                appendBlock(NUMBEROFBLOCKS -1, -1);
+efile.c(310): warning:  #68-D: integer conversion resulted in a change of sign
+        return -1; //no duplicate
+efile.c(326): warning:  #68-D: integer conversion resulted in a change of sign
+                        if(findDuplicateIndex(name) != -1)
+efile.c(350): warning:  #68-D: integer conversion resulted in a change of sign
+  uint32_t fileOpenIndex = -1;
+efile.c(363): warning:  #68-D: integer conversion resulted in a change of sign
+        if(fileIndex != -1 && threadIdOpened != RunPt->id) //file exists
+efile.c(382): warning:  #68-D: integer conversion resulted in a change of sign
+        if(fileOpenIndex == -1)
+efile.c(388): warning:  #68-D: integer conversion resulted in a change of sign
+        fileOpenIndex = -1;
+efile.c(389): warning:  #68-D: integer conversion resulted in a change of sign
+        lastOpenedBlock = -1;
+efile.c(390): warning:  #68-D: integer conversion resulted in a change of sign
+        threadIdOpened = -1;
+efile.c(450): warning:  #68-D: integer conversion resulted in a change of sign
+        if(fileIndex != -1 && threadIdOpened != RunPt->id) //file exists
+efile.c(471): warning:  #68-D: integer conversion resulted in a change of sign
+        if(fileOpenIndex == -1)
+efile.c(479): warning:  #68-D: integer conversion resulted in a change of sign
+                fileOpenIndex = -1;
+efile.c(480): warning:  #68-D: integer conversion resulted in a change of sign
+                lastOpenedBlock = -1;
+efile.c(481): warning:  #68-D: integer conversion resulted in a change of sign
+                threadIdOpened = -1;
+efile.c(579): warning:  #68-D: integer conversion resulted in a change of sign
+        if(toDeleteIndex == -1)
+efile.c(587): warning:  #68-D: integer conversion resulted in a change of sign
+        Directory[toDeleteIndex].startingBlock = -1;
+efile.c: 25 warnings, 0 errors
+linking...
+Program Size: Code=9804 RO-data=32 RW-data=348 ZI-data=28212  
+".\UARTInts.axf" - 0 Error(s), 32 Warning(s).
+Load "C:\\445M\\Lab4\\UARTInts.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+</pre>
+</body>
+</html>
